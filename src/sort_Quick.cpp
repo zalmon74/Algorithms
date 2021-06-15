@@ -1,17 +1,17 @@
-#include "Algorithms.hpp"
 
-#include <vector>
+#include "../Algorithms.hpp"
 
 // Входные параметры:
-// vec_in - входной вектор для которого необходима сортировка
-// left   - индекс элемента с которого необходимо начать сортировку
-// right  - индекс элемента в котором необходимо закончить сортировку
-void QuickSort(std::vector<int> &vec_in, size_t left, size_t right)
+  // vec_in - входной вектор для которого необходима сортировка
+  // left   - индекс элемента с которого необходимо начать сортировку
+  // right  - индекс элемента в котором необходимо закончить сортировку
+template <class T = int>
+void QuickSort(std::vector<T>& vec_in, size_t left, size_t right)
 {
-  int mid = vec_in[(right + left) / 2]; // Центральынй элемент в массиве
-  size_t left_local = left;             // Локальный индекс элемента слева относительно центрального
-  size_t right_local = right;           // Локальный индекс элемента справа относительно центрального
-  int temp = 0;                         // Вспомогательная временная переменная для перестановки элементов
+  T mid = vec_in[(right + left) / 2]; // Центральынй элемент в массиве
+  size_t left_local = left;           // Локальный индекс элемента слева относительно центрального
+  size_t right_local = right;         // Локальный индекс элемента справа относительно центрального
+  T temp = 0;                         // Вспомогательная временная переменная для перестановки элементов
 
   // Основной цикл
   while (left_local <= right_local)
@@ -47,3 +47,5 @@ void QuickSort(std::vector<int> &vec_in, size_t left, size_t right)
     QuickSort(vec_in, left_local, right);
   }
 }
+
+
