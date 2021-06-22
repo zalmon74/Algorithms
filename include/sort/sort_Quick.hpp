@@ -1,5 +1,7 @@
+#ifndef SORT_QUICK_HPP
+#define SORT_QUICK_HPP
 
-#include "../Algorithms.hpp"
+#include <vector>
 
 // Входные параметры:
   // vec_in - входной вектор для которого необходима сортировка
@@ -48,4 +50,4 @@ void QuickSort(std::vector<T>& vec_in, size_t left, size_t right)
   }
 }
 
-
+#endif // SORT_QUICK_HPP

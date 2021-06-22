@@ -1,4 +1,7 @@
-#include "../Algorithms.hpp"
+#ifndef SORT_BUBBLE_HPP
+#define SORT_BUBBLE_HPP
+
+#include <vector>
 
 /* Функция пузырьковой сортировки */
 // Входные параметры:
@@ -22,3 +25,5 @@ void BubbleSort(std::vector<T>& vec_in)
     }
   }
 }
+
+#endif // SORT_BUBBLE_HPP

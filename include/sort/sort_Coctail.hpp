@@ -1,4 +1,7 @@
-#include "../Algorithms.hpp"
+#ifndef SORT_COCTAIL_HPP
+#define SORT_COCTAIL_HPP
+
+#include <vector>
 
 /* Функция шейкерной сортировки (сортировка перемешиванием) */
 // Входные параметры:
@@ -40,3 +43,4 @@ void CocktailShakerSort(std::vector<T>& vec_in)
   }
 }
 
+#endif // SORT_COCTAIL_HPP
